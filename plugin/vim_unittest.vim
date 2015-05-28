@@ -1,5 +1,5 @@
 " Date Create: 2015-05-28 10:27:30
-" Last Change: 2015-05-28 11:16:16
+" Last Change: 2015-05-28 17:05:17
 " Author: Artur Sh. Mamedbekov (Artur-Mamedbekov@yandex.ru)
 " License: GNU GPL v3 (http://www.gnu.org/copyleft/gpl.html)
 
@@ -22,10 +22,14 @@ let s:p.testDir = ''
 " Выполнить тест-кейсы.
 "" }}}
 call s:p.menu('Run', 'run', 1)
+call s:p.menu('RunCurrentFile', 'runCurrentFile', 2)
+call s:p.menu('RunCurrentTest', 'runCurrentTest', 3)
 
 "" {{{
 " Выполнить тест-кейсы.
 "" }}}
 call s:p.comm('UnitTestRun', 'run()')
+call s:p.comm('UnitTestRunFile', 'runFile("<args>")')
+call s:p.comm('UnitTestRunCurrentFile', 'runCurrentFile()')
 
 call s:p.reg()
