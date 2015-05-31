@@ -1,5 +1,5 @@
 " Date Create: 2015-05-28 10:27:30
-" Last Change: 2015-05-28 17:05:17
+" Last Change: 2015-05-31 16:12:14
 " Author: Artur Sh. Mamedbekov (Artur-Mamedbekov@yandex.ru)
 " License: GNU GPL v3 (http://www.gnu.org/copyleft/gpl.html)
 
@@ -31,5 +31,6 @@ call s:p.menu('RunCurrentTest', 'runCurrentTest', 3)
 call s:p.comm('UnitTestRun', 'run()')
 call s:p.comm('UnitTestRunFile', 'runFile("<args>")')
 call s:p.comm('UnitTestRunCurrentFile', 'runCurrentFile()')
+call s:p.comm('UnitTestRunCurrentTest', 'runCurrentTest()')
 
 call s:p.reg()
